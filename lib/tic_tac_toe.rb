@@ -28,4 +28,8 @@ class TicTacToe
     @input.to_i - 1
   end
 
+  def move(input, char)
+    @board[input] = char
+  end
+
 end
