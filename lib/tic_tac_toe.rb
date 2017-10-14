@@ -94,4 +94,10 @@ class TicTacToe
      (won? || draw?)
   end
 
+  def winner
+     if won?
+       return @board[won?[0]]
+     end
+  end
+
 end
