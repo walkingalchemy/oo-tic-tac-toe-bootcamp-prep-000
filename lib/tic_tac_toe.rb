@@ -32,4 +32,9 @@ class TicTacToe
     @board[input] = char
   end
 
+  def position_taken?(position)
+    (@board[position] == "X" || @board[position] == "O") ?
+    true : false
+  end
+
 end
